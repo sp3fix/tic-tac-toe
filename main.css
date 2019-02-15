@@ -1,0 +1,123 @@
+body {
+    font-family: 'Permanent Marker';
+    font-size: 14px;
+    color: rgb(50,50,50);
+}
+
+h1 {
+    font-size: 3em;
+    text-align: center;
+    margin: 25px;
+}
+
+.players {
+    display: flex;
+    width: 450px;
+    text-align: center;
+    height: 30px;
+    margin: 30px auto;
+    
+}
+
+.blue {
+    color: #5d8bae;
+}
+
+.red {
+    color: #c1381e;
+}
+
+.players h2 {
+    margin: auto;
+    font-size: 1.8em;
+}
+
+h2 img {
+    width: 15px;
+}
+
+.container {
+    display: grid;
+    grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+    width: 350px;
+    height: 350px;
+    margin: auto;
+    border: none;
+    border-radius: 5pt;
+}
+
+
+.gridElement {
+    display: grid;
+    border: 2px solid rgb(32, 32, 32);
+}
+
+
+.gridElement span {
+    place-self: center;
+    font-size: 4em;
+}
+
+#winScreen {
+    background-color: rgba(255, 255, 255, 0.9);
+    z-index: 999;
+    width: 350px;
+    height: 350px;
+    position: relative;
+    top: -350px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+}
+
+#winScreen div {
+    padding-top: 80px;
+    font-size: 3em;
+}
+
+#resetButton {
+    height: 50px;
+    width: 50px;
+    margin: 30px auto;
+    background-image: url('reset.png');
+    background-repeat: no-repeat;
+    background-size: 45px 45px;
+}
+
+/* GRID BORDER */
+
+.container #el0 {
+    border-left: none;
+    border-top: none;
+}
+
+.container #el2 {
+    border-right: none;
+    border-top: none;
+}
+
+.container #el6 {
+    border-left: none;
+    border-bottom: none;
+}
+
+.container #el8 {
+    border-right: none;
+    border-bottom: none;
+}
+
+.container #el1 {
+    border-top: none;
+}
+
+.container #el7 {
+    border-bottom: none;
+}
+
+.container #el3 {
+    border-left: none;
+}
+
+.container #el5 {
+    border-right: none;
+}
